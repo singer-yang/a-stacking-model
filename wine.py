@@ -1,9 +1,9 @@
 '''
 @Description: a kind of stacking model, refer to: https://www.kaggle.com/getting-started/18153#post103381
 @Author: xinge yang
-@Date: 2019-09-21 09:45:43
+@Date: 2019-09-18 09:45:43
 @LastEditTime: 2019-09-21 21:54:18
-@LastEditors: Please set LastEditors
+@LastEditors: xinge yang
 '''
 import numpy as np
 import pandas as pd
