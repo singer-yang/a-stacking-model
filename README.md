@@ -1,4 +1,3 @@
-# wine-quality
  ## a stacking model for wine quality prediction
  
 ![image](https://github.com/singer-yang/wine-quality/blob/master/model.jpg)
