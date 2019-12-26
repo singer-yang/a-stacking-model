@@ -2,8 +2,13 @@
 @Description: a kind of stacking model, refer to: https://www.kaggle.com/getting-started/18153#post103381
 @Author: xinge yang
 @Date: 2019-09-18 09:45:43
+<<<<<<< HEAD
 @LastEditTime: 2019-09-22 23:07:43
 @LastEditors: Please set LastEditors
+=======
+@LastEditTime: 2019-09-21 21:54:18
+@LastEditors: xinge yang
+>>>>>>> d6a137c32c1649904abfdfc44428b02a4e21f3bf
 '''
 import numpy as np
 import pandas as pd
