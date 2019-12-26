@@ -1,8 +1,8 @@
 '''
 @Description: a kind of stacking model, refer to: https://www.kaggle.com/getting-started/18153#post103381
 @Author: xinge yang
-@Date: 2019-09-21 09:45:43
-@LastEditTime: 2019-09-21 21:54:18
+@Date: 2019-09-18 09:45:43
+@LastEditTime: 2019-09-22 23:07:43
 @LastEditors: Please set LastEditors
 '''
 import numpy as np
@@ -137,7 +137,7 @@ print("score of averaging model is {:.4f} ({:.4f})".format(
     score.mean(), score.std()))
 
 
-# define a new ensembled model
+# define a new stacking model
 class StackingAveragedModels(BaseEstimator, RegressorMixin, TransformerMixin):
     def __init__(self, base_models, meta_model, n_folds=5):
         self.base_models = base_models
@@ -146,7 +146,6 @@ class StackingAveragedModels(BaseEstimator, RegressorMixin, TransformerMixin):
 
     def fit(self, X, y):
         self.base_models_ = [list() for x in self.base_models]
-        # self.base_models_ = [clone(x) for x in self.base_models]
         self.meta_model_ = clone(self.meta_model)
         kfold = KFold(n_splits=self.n_folds, shuffle=True, random_state=156)
         out_of_fold_predictions = np.zeros((X.shape[0], len(self.base_models)))
